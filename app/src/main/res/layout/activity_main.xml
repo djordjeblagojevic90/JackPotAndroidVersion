@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<VideoView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/video_view_no_winner">
+</VideoView>
+
+    <com.robinhood.ticker.TickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerView_grand"
+        android:gravity="center"
+        app:ticker_animationDuration="1500"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="250dp" />
+
+    <com.robinhood.ticker.TickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerView_mega"
+        android:gravity="center"
+        app:ticker_animationDuration="1500"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/tickerView_grand"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="250dp" />
+
+
+    <com.robinhood.ticker.TickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerView_maxi"
+        android:gravity="center"
+        app:ticker_animationDuration="1500"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/tickerView_mega"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="280dp" />
+
+
+    <com.robinhood.ticker.TickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerView_mini"
+        android:gravity="center"
+        app:ticker_animationDuration="1500"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/tickerView_maxi"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="195dp" />
+
+
+    <com.robinhood.ticker.TickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tickerView_midi"
+        android:gravity="center"
+        app:ticker_animationDuration="1500"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/tickerView_maxi"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="445dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
